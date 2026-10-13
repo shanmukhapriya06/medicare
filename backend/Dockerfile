@@ -11,11 +11,11 @@ FROM maven:3.9.9-eclipse-temurin-21-alpine AS builder
 WORKDIR /app
 
 # Cache dependencies first for faster rebuilds
-COPY pom.xml .
+COPY backend/pom.xml .
 RUN mvn dependency:go-offline -B
 
 # Copy application source and build executable JAR
-COPY src ./src
+COPY backend/src ./src
 RUN mvn clean package -DskipTests -B
 
 # ------------------------------------------------------------
