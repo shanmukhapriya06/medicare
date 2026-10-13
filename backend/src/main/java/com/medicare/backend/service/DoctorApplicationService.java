@@ -168,7 +168,7 @@ public class DoctorApplicationService {
         application.setAvailabilityEnd(cleanEnd);
         application.setCredentialsFileName(fileName);
         application.setCredentialsContentType(contentType);
-        application.setCredentialsFileSize(fileBytes.length);
+        application.setCredentialsFileSize((long) fileBytes.length);
         application.setCredentialsData(fileBytes);
         application.setStatus(DoctorApplicationStatus.PENDING);
 
