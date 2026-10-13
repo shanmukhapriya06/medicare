@@ -1,0 +1,51 @@
+/* ============================================================
+   MediCare – Reusable Empty State Styles
+   ============================================================ */
+
+.medicare-empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+  background: #f8fafc;
+  border: 1.5px dashed #cbd5e1;
+  border-radius: 12px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.medicare-empty-state__icon-wrap {
+  width: 64px;
+  height: 64px;
+  background: #e0f2fe;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.medicare-empty-state__icon {
+  font-size: 28px;
+}
+
+.medicare-empty-state__title {
+  margin: 0 0 6px;
+  font-size: 17px;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.medicare-empty-state__description {
+  margin: 0 0 20px;
+  font-size: 14px;
+  color: #64748b;
+  max-width: 420px;
+  line-height: 1.5;
+}
+
+.medicare-empty-state__action {
+  display: flex;
+  gap: 12px;
+}

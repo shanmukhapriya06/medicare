@@ -1,0 +1,23 @@
+/* ============================================================
+   MediCare – Modern Registration Styles (uses Login.css shared classes)
+   ============================================================ */
+@import './Login.css';
+
+.alert-action-btn {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background: #16a34a;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-block;
+}
+
+.alert-action-btn:hover {
+  background: #15803d;
+  transform: translateY(-1px);
+}

@@ -1,0 +1,133 @@
+/* ============================================================
+   MediCare – Reusable Navigation Elements Styles
+   ============================================================ */
+
+.medicare-tabs {
+  display: flex;
+  gap: 8px;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 2px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.medicare-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.medicare-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  color: #64748b;
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  margin-bottom: -2px;
+}
+
+.medicare-tab:hover {
+  color: #0284c7;
+}
+
+.medicare-tab--active {
+  color: #0284c7;
+  border-bottom-color: #0284c7;
+}
+
+.medicare-tab__badge {
+  padding: 2px 7px;
+  font-size: 11px;
+  border-radius: 9999px;
+  background: #e2e8f0;
+  color: #334155;
+  font-weight: 700;
+}
+.medicare-tab--active .medicare-tab__badge {
+  background: #e0f2fe;
+  color: #0369a1;
+}
+
+/* Quick Action Card */
+.medicare-quick-action {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: all 0.2s ease;
+  text-align: left;
+}
+
+.medicare-quick-action:hover {
+  border-color: #93c5fd;
+  box-shadow: 0 4px 12px -2px rgba(2, 132, 199, 0.08);
+}
+
+.medicare-quick-action__icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  background: #e0f2fe;
+  color: #0284c7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+.medicare-quick-action__content {
+  flex: 1 1 auto;
+}
+
+.medicare-quick-action__title {
+  margin: 0 0 2px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.medicare-quick-action__desc {
+  margin: 0;
+  font-size: 13px;
+  color: #64748b;
+}
+
+.medicare-quick-action__btn {
+  background: #f0f9ff;
+  border: 1px solid #bae6fd;
+  color: #0284c7;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+}
+
+.medicare-quick-action__btn:hover {
+  background: #0284c7;
+  color: #ffffff;
+  border-color: #0284c7;
+}
+
+@media (max-width: 640px) {
+  .medicare-quick-action {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .medicare-quick-action__btn {
+    width: 100%;
+    text-align: center;
+  }
+}

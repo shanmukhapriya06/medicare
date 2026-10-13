@@ -1,0 +1,371 @@
+.aa-page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 32px 20px 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+.aa-page-header {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.aa-back-link {
+  align-self: flex-start;
+  background: none;
+  border: none;
+  color: #0284c7;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+}
+
+.aa-back-link:hover {
+  color: #0369a1;
+  text-decoration: underline;
+}
+
+.aa-header-row h1 {
+  margin: 0 0 8px;
+  font-size: 30px;
+  font-weight: 800;
+  color: #0f172a;
+  letter-spacing: -0.6px;
+}
+
+.aa-header-row p {
+  margin: 0;
+  color: #64748b;
+  font-size: 15px;
+  line-height: 1.6;
+  max-width: 680px;
+}
+
+.aa-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.04);
+}
+
+/* ---------------- Status cards ---------------- */
+.aa-status-card {
+  padding: 28px;
+  text-align: center;
+}
+
+.aa-status-card h2 {
+  margin: 0 0 8px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.aa-status-card p {
+  margin: 0;
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.aa-status-icon {
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.aa-status-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+
+.aa-status-card--pending {
+  border-left: 4px solid #f59e0b;
+  text-align: left;
+}
+
+.aa-status-card--approved {
+  border-left: 4px solid #16a34a;
+  text-align: left;
+}
+
+.aa-status-card--rejected {
+  border-left: 4px solid #ef4444;
+  text-align: left;
+}
+
+.aa-status-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.aa-status-meta {
+  margin-top: 6px !important;
+  font-size: 13px !important;
+  color: #94a3b8 !important;
+}
+
+.aa-status-chip {
+  display: inline-block;
+  padding: 3px 12px;
+  border-radius: 9999px;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+.aa-status-chip--pending {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.aa-status-chip--approved {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.aa-status-chip--rejected {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.aa-status-note {
+  margin-top: 14px !important;
+  padding: 12px 14px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+}
+
+.aa-review-notes {
+  margin-top: 10px !important;
+  color: #334155 !important;
+}
+
+.aa-submitted-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px 20px;
+  margin-top: 18px;
+  padding: 16px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.aa-submitted-summary div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.aa-submitted-summary span {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: #94a3b8;
+}
+
+.aa-submitted-summary strong {
+  font-size: 14px;
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.aa-summary-wide {
+  grid-column: 1 / -1;
+}
+
+/* ---------------- Form ---------------- */
+.aa-form {
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.aa-form-section h3 {
+  margin: 0 0 16px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f172a;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.aa-section-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 8px;
+  background: #e0f2fe;
+  color: #0369a1;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.aa-form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px 20px;
+}
+
+.aa-form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.aa-form label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.aa-form .input-field {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  color: #0f172a;
+  background: #ffffff;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.aa-form .input-field:focus {
+  outline: none;
+  border-color: #0284c7;
+  box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.12);
+}
+
+.aa-form .input-field.input-error {
+  border-color: #ef4444;
+}
+
+.aa-form .field-error-text {
+  font-size: 12px;
+  color: #dc2626;
+  font-weight: 500;
+}
+
+.aa-file-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 12px;
+  border: 1px dashed #94a3b8;
+  border-radius: 8px;
+  background: #f8fafc;
+  font-size: 13px;
+  color: #334155;
+  cursor: pointer;
+}
+
+.aa-file-input.input-error {
+  border-color: #ef4444;
+}
+
+.aa-file-hint {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.aa-form-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  padding-top: 4px;
+  border-top: 1px solid #f1f5f9;
+}
+
+.aa-btn {
+  padding: 11px 22px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.aa-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.aa-btn-primary {
+  background: #0284c7;
+  color: #ffffff;
+  border-color: #0284c7;
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.22);
+}
+
+.aa-btn-primary:hover:not(:disabled) {
+  background: #0369a1;
+  border-color: #0369a1;
+}
+
+.aa-btn-outline {
+  background: #ffffff;
+  color: #334155;
+  border-color: #cbd5e1;
+}
+
+.aa-btn-outline:hover:not(:disabled) {
+  background: #f8fafc;
+  border-color: #94a3b8;
+}
+
+.aa-spinner {
+  width: 30px;
+  height: 30px;
+  margin: 0 auto 12px;
+  border: 3px solid #e0f2fe;
+  border-top-color: #0284c7;
+  border-radius: 50%;
+  animation: aa-spin 0.9s linear infinite;
+}
+
+@keyframes aa-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 640px) {
+  .aa-page {
+    padding: 20px 14px 48px;
+  }
+
+  .aa-header-row h1 {
+    font-size: 24px;
+  }
+
+  .aa-form,
+  .aa-status-card {
+    padding: 20px 16px;
+  }
+
+  .aa-form-actions .aa-btn,
+  .aa-status-actions .aa-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

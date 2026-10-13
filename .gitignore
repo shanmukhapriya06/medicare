@@ -1,0 +1,104 @@
+# ============================================================
+# MediCare – Root .gitignore
+# Covers: Java / Spring Boot, React / Vite, MySQL dumps,
+#         IDE files, OS files, and environment secrets.
+# ============================================================
+
+# ----- Java / Spring Boot (backend) -------------------------
+
+# Compiled class files
+*.class
+
+# Package files
+*.jar
+*.war
+*.ear
+
+# Maven build output
+backend/target/
+
+# Gradle build output
+backend/build/
+backend/.gradle/
+
+# Maven wrapper (downloaded binary – not source)
+backend/.mvn/wrapper/maven-wrapper.jar
+
+# Gradle wrapper (downloaded binary – not source)
+backend/gradle/wrapper/gradle-wrapper.jar
+
+# ----- React / Vite (frontend) ------------------------------
+
+# Dependencies installed by npm / yarn / pnpm
+frontend/node_modules/
+
+# Build output produced by Vite
+frontend/dist/
+
+# ----- Environment & secrets --------------------------------
+
+# Local environment variable files that may contain passwords,
+# API keys, JWT secrets, or database credentials.
+.env
+.env.*
+.env.local
+.env.*.local
+*.env
+**/.env
+**/.env.*
+**/.env.local
+**/.env.*.local
+!.env.example
+!**/.env.example
+
+# ----- IDE and editor files ---------------------------------
+
+# IntelliJ IDEA / Android Studio
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# VS Code (workspace-specific settings)
+.vscode/
+
+# NetBeans
+nbproject/
+nbbuild/
+nbdist/
+nb-configuration.xml
+
+# ----- OS-generated files -----------------------------------
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# ----- Logs -------------------------------------------------
+
+*.log
+*.err
+logs/
+
+# ----- Miscellaneous ----------------------------------------
+
+# npm debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# MySQL / database dumps
+*.sql.gz

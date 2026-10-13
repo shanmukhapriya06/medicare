@@ -1,0 +1,97 @@
+/* ============================================================
+   MediCare – Reusable Alert Banner Styles
+   ============================================================ */
+
+.medicare-alert {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px 18px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  font-size: 14px;
+  line-height: 1.45;
+  margin-bottom: 20px;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.medicare-alert__icon {
+  font-size: 16px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.medicare-alert__content {
+  flex: 1 1 auto;
+}
+
+.medicare-alert__title {
+  margin: 0 0 4px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.medicare-alert__message {
+  color: inherit;
+}
+
+.medicare-alert__close {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  line-height: 1;
+  color: inherit;
+  opacity: 0.6;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 8px;
+}
+
+.medicare-alert__close:hover {
+  opacity: 1;
+}
+
+/* Alert Types */
+.medicare-alert--info {
+  background-color: #f0f9ff;
+  border-color: #bae6fd;
+  color: #0369a1;
+}
+.medicare-alert--info .medicare-alert__icon {
+  background-color: #e0f2fe;
+}
+
+.medicare-alert--success {
+  background-color: #f0fdf4;
+  border-color: #bbf7d0;
+  color: #15803d;
+}
+.medicare-alert--success .medicare-alert__icon {
+  background-color: #dcfce7;
+}
+
+.medicare-alert--warning {
+  background-color: #fffbeb;
+  border-color: #fde68a;
+  color: #b45309;
+}
+.medicare-alert--warning .medicare-alert__icon {
+  background-color: #fef3c7;
+}
+
+.medicare-alert--error {
+  background-color: #fef2f2;
+  border-color: #fecaca;
+  color: #b91c1c;
+}
+.medicare-alert--error .medicare-alert__icon {
+  background-color: #fee2e2;
+}

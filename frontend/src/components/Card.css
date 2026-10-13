@@ -1,0 +1,82 @@
+/* ============================================================
+   MediCare – Reusable Card Styles
+   ============================================================ */
+
+.medicare-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.04), 0 2px 4px -2px rgba(0, 0, 0, 0.02);
+  transition: all 0.2s ease-in-out;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+/* Card Variants */
+.medicare-card--default {
+  background: #ffffff;
+}
+
+.medicare-card--elevated {
+  border-color: #cbd5e1;
+  box-shadow: 0 10px 15px -3px rgba(2, 132, 199, 0.08), 0 4px 6px -4px rgba(2, 132, 199, 0.04);
+}
+
+.medicare-card--bordered {
+  box-shadow: none;
+  border: 1.5px solid #e2e8f0;
+}
+
+.medicare-card--highlight {
+  border-left: 4px solid #0284c7;
+  background: #f8fafc;
+}
+
+/* Interactive Card */
+.medicare-card--interactive {
+  cursor: pointer;
+}
+.medicare-card--interactive:hover {
+  transform: translateY(-2px);
+  border-color: #93c5fd;
+  box-shadow: 0 12px 20px -4px rgba(2, 132, 199, 0.12), 0 4px 6px -2px rgba(2, 132, 199, 0.04);
+}
+
+/* Card Inner Sections */
+.medicare-card__header {
+  padding: 20px 24px 12px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.medicare-card__title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #0f172a;
+  line-height: 1.3;
+}
+
+.medicare-card__desc {
+  margin: 4px 0 0;
+  font-size: 13px;
+  color: #64748b;
+  line-height: 1.4;
+}
+
+.medicare-card__content {
+  padding: 20px 24px;
+  flex: 1 1 auto;
+}
+
+.medicare-card__footer {
+  padding: 14px 24px;
+  background: #f8fafc;
+  border-top: 1px solid #f1f5f9;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+}

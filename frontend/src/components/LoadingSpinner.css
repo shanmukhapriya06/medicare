@@ -1,0 +1,98 @@
+/* ============================================================
+   MediCare – Reusable Loading Spinner Styles
+   ============================================================ */
+
+.medicare-spinner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  gap: 14px;
+  text-align: center;
+}
+
+.medicare-spinner-container--full {
+  min-height: calc(100vh - 240px);
+}
+
+.medicare-spinner {
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #e2e8f0;
+  border-top-color: #0284c7;
+  animation: medicare-spin 0.8s linear infinite;
+}
+
+.medicare-spinner--sm {
+  width: 20px;
+  height: 20px;
+  border-width: 2.5px;
+}
+
+.medicare-spinner--md {
+  width: 38px;
+  height: 38px;
+  border-width: 3.5px;
+}
+
+.medicare-spinner--lg {
+  width: 56px;
+  height: 56px;
+  border-width: 4.5px;
+}
+
+.medicare-spinner__message {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #64748b;
+}
+
+@keyframes medicare-spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Skeleton loaders */
+.medicare-skeleton-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.medicare-skeleton-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.medicare-skeleton {
+  background: linear-gradient(90deg, #f1f5f9 25%, #e2e8f0 50%, #f1f5f9 75%);
+  background-size: 200% 100%;
+  border-radius: 6px;
+  animation: medicare-shimmer 1.5s infinite;
+}
+
+.medicare-skeleton--title {
+  height: 20px;
+  width: 45%;
+}
+
+.medicare-skeleton--text {
+  height: 14px;
+  width: 85%;
+}
+
+.medicare-skeleton--short {
+  width: 60%;
+}
+
+@keyframes medicare-shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}

@@ -1,0 +1,89 @@
+/* ============================================================
+   MediCare – Reusable Form Field Styles
+   ============================================================ */
+
+.medicare-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 18px;
+  text-align: left;
+}
+
+.medicare-form-field__label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1e293b;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.medicare-form-field__required {
+  color: #ef4444;
+  font-weight: 700;
+}
+
+.medicare-form-field__input {
+  width: 100%;
+  padding: 10px 14px;
+  font-family: inherit;
+  font-size: 14px;
+  color: #0f172a;
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.medicare-form-field__input:hover:not(:disabled) {
+  border-color: #94a3b8;
+}
+
+.medicare-form-field__input:focus {
+  border-color: #0284c7;
+  box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
+}
+
+.medicare-form-field__input:disabled,
+.medicare-form-field__input[readonly] {
+  background-color: #f8fafc;
+  color: #64748b;
+  cursor: not-allowed;
+  border-color: #e2e8f0;
+}
+
+.medicare-form-field__textarea {
+  resize: vertical;
+  min-height: 80px;
+  line-height: 1.5;
+}
+
+.medicare-form-field__select {
+  cursor: pointer;
+}
+
+/* Error state */
+.medicare-form-field--error .medicare-form-field__input {
+  border-color: #ef4444;
+  background-color: #fef2f2;
+}
+
+.medicare-form-field--error .medicare-form-field__input:focus {
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.15);
+}
+
+.medicare-form-field__error-msg {
+  font-size: 12px;
+  font-weight: 500;
+  color: #dc2626;
+  margin-top: 2px;
+}
+
+.medicare-form-field__helper-msg {
+  font-size: 12px;
+  color: #64748b;
+  margin-top: 2px;
+}
